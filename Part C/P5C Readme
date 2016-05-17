@@ -1,0 +1,17 @@
+P5C Readme
+Anuj Mehndiratta
+JHED: Amehndi1
+
+
+Note: Alex Owen and I werent able to figure out this part of the project done in time for the deadline so we collaborated/discussed and got it done in the extra grace hour that we get so that we could get some extra credit.  
+
+Files: 
+P5C.java handles the I/O and the algorithm for this part
+
+GraphM.java the adjacency matrix implementation of the graph
+
+Edge.java class to create an edge
+
+Time Complexity: Is N^2 because in the worst case the path will have all N nodes and then all N edges will have ot be checked for connectivity.  
+
+Space Complexity: The arraylist of sorted edges. 

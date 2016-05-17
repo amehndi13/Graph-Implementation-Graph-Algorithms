@@ -1,0 +1,26 @@
+Part A ReadMe
+Anuj Mehndiratta
+JHED: Amehndi1
+
+
+Part A Files:
+Graph.java - This is adapted from OpenDSA. It is an adjacency matrix interface of a graph. 
+
+GraphM.java - This is also adapted from OpenDSA. It is an implementation of the interface Graph.java. 
+
+Path.java - This is a class for paths. I needed it mainly so I could compare the paths. This has a path object in it that I made. The comparePath method is really key here. The path class is really really important because the path object stores the number of stops and the number of miles 
+
+P5A.java - This is where I handle the I/O for the program. I also do all of the finding of the best path in this file. This is the main file for part A of the program. 
+
+Data Structures: 
+Arraylist
+HashMap
+
+Algorithm: 
+My algorithm is essentially a BFS. I go through and find every path and store it in an arrayList. I also then store the best paths in a separate arrayList. As I am going through the paths I keep updating the arrayList of best paths. I essentially run the method findBestPaths (which does the above) on each node. This does a BFS starting from each node.  
+
+Time Complexity:
+The time complexity of a BFS is (N + E) where N is the number of vertices and E is the number of Edges. I do this N times from N starting nodes, so the time complexity of the algorithm should be N^2 * (N + E) which is still under the benchmark that we were given. 
+
+Space Complexity:
+The Space complexity of the algorithm is essentially that we have an arraylist of potential paths and another arraylist of the best paths. 

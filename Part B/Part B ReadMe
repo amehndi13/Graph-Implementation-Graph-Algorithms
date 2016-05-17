@@ -1,0 +1,21 @@
+Part B ReadMe
+Anuj Mehndiratta
+JHED: Amehndi1
+
+
+Part A Files:
+P5B.java - this essentially controls the program for part b. It has all of the I/O in it as well as the algorithm. 
+
+AirportPair.java - This class is made to store the starting airport and the ending airport for a given flight. This is pretty basic but it helps with P5B because we can now use a pair of aiports as a key for our hashmap.
+
+Data Structures:
+Arraylist to store all the airports
+hashmap - to essentially serve as a frequency table. 
+
+Algorithm: I pretty much just wrote a frequency table again with the airportPair as the key and the frequency as the value. I incremented the value if I ever got to a pair of airports that already existed in the map. 
+
+Time Complexity:
+The time complexity of this algorithm is the amount of time it takes to iterate through all of the output from A. This should be (N^3) because there are N^2 lines in the whole thing and there can be up to N different segments per path on each line. 
+
+Space Complexity: 
+The space complexity of this part of the project is just the arryalist of the airports and the hashmap containing all of the frequencies. 
